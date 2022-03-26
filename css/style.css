@@ -1,0 +1,299 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #FDE1D6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #FDE1D6;
+    box-shadow: 0px 1px 5px #464646;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+}
+
+.menuFixo {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.main-menu {
+}
+
+.main-menu {
+    height: 80px;
+}
+
+.main-menu,
+.itens-menu,
+.espaco-sobre,
+.espaco-contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itens-menu {
+    width: 40%;
+}
+
+.menu-item:hover {
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
+.menu-item a {
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+section {
+    margin-top: 50px;
+}
+
+#promocoes {
+    margin-top: 0;
+}
+
+.titulo-bloco {
+    padding: 15px 0;
+}
+
+.titulo-bloco h1 {
+    color: #000000;
+    font-size: 42px;
+    text-align: center;
+}
+
+.imagem-sobre,
+.texto-sobre,
+.localizacao,
+.texto-endereco {
+    width: 50%;
+}
+
+.texto-sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+}
+
+.texto-tratamentos ul {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.texto-tratamentos ul li {
+    width: 220px;
+    list-style: none;
+    /* margin-bottom: 15px; */
+    margin: 0 15px 15px 0;
+    padding: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+}
+
+.localizacao iframe {
+    width: 90%;
+    height: 350px;
+}
+
+.texto-endereco {
+    padding: 35px;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+}
+
+.texto-endereco p {
+    color: #000000;
+    font-size: 16px;
+}
+
+.texto-endereco strong  {
+    color: #000000;
+    font-size: 20px;
+}
+
+#conheca-espaco {
+    background-color: #ffffff;
+    padding: 35px 0;
+}
+
+.item-carrossel a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #000000;
+    margin-top: 35px;
+    padding: 15px 0;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+}
+
+footer p a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/*lightbox*/
+    .lb-dataContainer {
+        display: none!important;
+    }
+/*lightbox*/
+
+/*slick*/
+    .slick-prev:before,
+    .slick-next:before {
+        color: #000000;
+    }
+/*slick*/
+
+/*slider*/
+/* Slideshow container */
+    .slideshow-container,
+    .texto-item-promocao,
+    .imagem-promocao,
+    .item-slide .imagem-promocao img {
+        height: 500px;
+    }
+
+    .slideshow-container {
+        position: relative;
+        margin: auto;
+    }
+  
+/* Hide the images by default */
+    .item-slide {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+/* Next & previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: #000000;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .prev {
+        left: 5px;
+    }
+
+    .next {
+        right: 5px;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        color: #FDE1D6;
+        transition: 0.5s;
+    }
+
+    /* Hide the images by default */
+
+    .item-slide .imagem-promocao {
+        width: 50%;
+    }
+    
+
+    .item-slide .imagem-promocao img {
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    /* Caption text */
+    .texto-item-promocao {
+        background-color: #ffffff;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 35px;
+    }
+    
+    .texto-item-promocao p {
+        color: #000000;
+        font-size: 14px;
+    }
+    
+/* The dots/bullets/indicators */
+    .dots-box {
+        position: absolute;
+        left: 50%;
+        z-index: 1;
+        margin-top: -50px;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #FDE1D6;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+        background-color: #000000;
+    }
+  
+/* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    }
+/*slider*/
